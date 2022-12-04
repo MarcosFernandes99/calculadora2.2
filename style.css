@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS RESET */
+
+header {
+    height: 10vh;
+    background-color: #042940;
+}
+
+img {
+    margin-top: 3vh;
+}
+
+.current-operation {
+    background-color: #DBF227;
+    text-align: right;
+    padding: 1vh;
+    overflow-wrap: break-word;
+    min-height: 5vh;
+    font-size: 3vh;
+}
+
+.calc {
+    background-color: #EEEEEE;
+    margin-top: 20vh;
+    width: 20vw;   
+    margin-left: 35vw; 
+    border: black solid;
+    border-radius: 1vh;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5vw;
+    margin-top: 2vh;
+}
+
+.buttons-container button {
+    cursor: pointer;
+    height: 7vh;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+.buttons-container button:hover {
+    background-color: #d9d9d9;
+}
+
+.buttons-container div {
+    grid-column: span 3;
+    
+}
+.text-result {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.last-result {
+    background-color: #042940;
+    padding: 1vh;
+    margin-top: 2vh;
+    height: 7vh;
+    border-radius: 1vh;
+}
+
+
+
