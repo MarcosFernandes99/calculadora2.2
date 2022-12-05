@@ -10,13 +10,19 @@ function calc() {
     let resultado = document.getElementById("current").innerHTML
 
     if(resultado){
-        document.getElementById("current").innerHTML = eval(resultado)
+        document.getElementById("current").innerHTML = ""
         document.getElementById("last-result").innerHTML = eval(resultado)
+        saveLocalStorage(eval(resultado))
     }
     else{
         document.getElementById("current").innerHTML = 'Nada para calcular'
     }
 
+}
+
+
+function saveLocalStorage (resultadoParametro){
+    localStorage.setItem('resultado', resultadoParametro)
 }
 
 
